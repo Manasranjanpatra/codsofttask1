@@ -1,0 +1,285 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlink {
+    display: flex;
+    list-style: none;
+}
+.nava {
+    flex-direction: column;
+    padding: 1.4rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 800;
+}
+.nava:hover {
+    color: rgb(43, 98, 226);
+    border-bottom: 2px rgb(207, 36, 36);
+}
+#btn {
+    display: none;
+    padding-right:2rem;
+    font-size:1.5rem;
+    padding:2px solid rgb(231, 224, 224);
+}
+#btn #i2{
+    display: none;
+}
+.logo {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+#sechero {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.circle {
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    background: url(./Assets/inside3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    margin-left: 9rem;
+    margin-right: 8rem;
+    /* position: relative; */
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    opacity: 1;
+}
+.content h5 {
+    color: white;
+}
+.about {
+    height: 90vh;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+}
+.daba1 {
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine;
+    text-align: center;
+}
+.daba1 h1{
+    font-size: 2.3rem;
+}
+.gap{
+    width:100%;
+    height:3rem;
+    background-color: rgb(122, 110, 110);
+}
+.conn {
+    height: 90%;
+    width: 100%;
+}
+ .write{
+    margin: auto;
+    margin-bottom: 2rem;
+    height:30%;
+    width:80%;
+    background-color: rgb(131, 240, 23);
+    font-size: 1.8rem;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 2px 2px 3rem white,-2px -2px 3rem white;
+}
+.daba2 {
+    width: 50%;
+    height: 100%;
+    background: url(./Assets/inside5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#connect{
+    margin:auto;
+    height:80vh;
+    width:60%;
+    background-color: rgb(113, 31, 189);
+    text-align: center;
+    font-size: 1.9rem;
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contact input{
+    text-align: center;
+    outline: none;
+    border: none;
+    height:3vh;
+    width:55%;
+    padding:1.3rem;
+    box-shadow: 2px 2px 1rem white,-2px -2px 1rem white;
+    border:1px solid black;
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+    margin-top: 1.2rem;
+}
+#abouti{
+    margin:auto;
+    height:100vh;
+    width:100%;
+    background-color: rgb(205, 123, 15);
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+#abouti input{
+    text-align: center;
+    outline: none;
+    border: none;
+    height:2.9vh;
+    width:60%;
+    padding:1.6rem;
+    box-shadow: 2px 2px 1rem white,-2px -2px 1rem white;
+    border:1px solid black;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+.aboutt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.1rem;
+}
+button{
+    width:9rem;
+    height:3rem;
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+    background-color: #030360;
+    color:white;
+    cursor: pointer; 
+}
+.icon h5{
+    font-size: 2.3rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.icon p{
+    margin-top: 0.5rem;
+}
+.icon  .font{
+    margin-top: 0.5rem;
+}
+.icon  .font i{
+    padding-left:1rem;
+}
+@media screen and (max-width:910px) {
+   
+    .container {
+        position: relative;
+    }
+    .navbar {
+        top: 4rem;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        left: 0;
+    }
+
+    .navlink {
+        background-color: rgb(255, 217, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .navlink li {
+        margin-top: 2rem;
+    }
+    .nava {
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    #btn{
+        display:flex;
+        flex-direction: column;
+    }
+    .aactive #btn  #i1
+    {
+        display:none;
+    }
+    .aactive #btn  #i2
+    {
+        display:block;
+    }
+    .active .navlink {
+        position: relative;
+        left: -100%;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:861px) {
+    .content{
+        font-size: 3.1rem;
+    }
+    .icon h5{
+        font-size: 1.7rem;
+    }
+    #connect {
+        width:80%; 
+     }
+}
+@media screen and (max-width:390px) {
+    .content{
+        font-size: 2.5rem;
+    }
+    #connect h1{
+        font-size: 2rem; 
+    }
+    .icon h5{
+        font-size: 1.4rem;
+    }
+    .contact input{
+        height:3vh;
+        width:65%;
+    }
+    .write {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:656px) {
+    .daba1 h1{
+        font-size: 1.3rem;
+    }
+    .write {
+        font-size: 1.4rem;
+    }
+}
+

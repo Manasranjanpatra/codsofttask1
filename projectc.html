@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="projectc.css">
+</head>
+
+<body>
+        <header class="container aactive ">
+            <div class="logo">
+                <h2>MANAS APP</h2>
+            </div>
+            <nav class="navbar  active">
+                <ul class="navlink"> 
+                    <li><a class="nava" href=" " alt="-blanck">Home</a></li>
+                    <li><a class="nava" href="#main" alt="-blanck">About</a></li>
+                    <li><a class="nava" href="#connect" alt="-blanck">Contact Us</a></li>
+                    <li><a class="nava" href="#abouti" alt="-blanck">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div id="btn">
+                <i class="fa-solid fa-square-xmark" id="i1"></i>
+                <i class="fa-solid fa-bars" id="i2"></i>
+            </div>
+        </header>
+    <main>
+        <section id="sechero">
+            <div class="circle ">
+                <div class="content ">
+                    <h1> Make Your Interior More Minimalistic & Modern</h1>
+                    <h5> turn your room with photo intop a lot more mionimastic and
+                        modern with our website
+                    </h5>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="main">
+        <section class="sechero2">
+            <div class="about">
+                <div class="daba1">
+                    <h1>Why you choose us</h1>
+                    <div class="conn">
+                        <div class="write"> 
+                       <h4>  Our products:</h4>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+                        </p> 
+                        </div>
+                        <div class="write">
+                           <h4> our service:</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, mol.</p>
+
+                        </div>
+                        <div class="write">
+                           <h4>Our quality:</h4>
+                            <p>We have best quality product regarding your home inside substances </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="daba2"> </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <Section id="connect">
+        <h1>Contact Us:</h1>
+        <div class="contact">
+
+            <label>Name:</label>
+            <input type="text" placeholder="your name..." />
+
+            <label>Email:</label>
+            <input type="text" placeholder="your Email ..." />
+
+            <label>Phone No:</label>
+            <input type="password" placeholder="Phone No.." />
+            <div class="icon">
+                <h5>manaspatra18@gmail.com</h5>
+                <p>+916372696969</p>
+                <div class="font">
+                 <i class="fa-brands fa-square-instagram"></i>
+                 <i class="fa-brands fa-facebook"></i>
+                 <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <section id="abouti">
+        <h1>Sign Up:</h1>
+        <div class="aboutt">
+
+            <label>Name:</label>
+            <input type="text" placeholder="Enter name..." />
+
+            <label>Email:</label>
+            <input type="text" placeholder="Enter Email..." />
+
+            <label>Otp No:</label>
+            <input type="password" placeholder="Enter otp..." />
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password..." />
+
+        </div>
+        <button>Login</button>
+
+    </section>
+    <script>
+        let button =document.getElementById("btn");
+        let tto = document.querySelector(".navbar");
+        let ttoo = document.querySelector(".container");
+        const toggle = () => {
+            tto.classList.toggle("active");
+            ttoo.classList.toggle("aactive");
+        }
+        button.addEventListener('click', () => toggle());
+    </script>
+</body>
+
